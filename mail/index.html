@@ -13,15 +13,19 @@
 <body>
     <div class="container-fluid py-4 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
         <div class="bg-white p-4 rounded-3">
-            <label for="exampleInputEmail1" class="form-label fs-4">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="email" class="form-label fs-4">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
             <div id="emailHelp" class="form-text">
                 Inserisci il tuo indirizzo elettronico per poter verificare la tua identità.
             </div>
-            <button type="submit" class="btn btn-primary mt-4">Check</button>
+            <button type="submit" id="check" class="btn btn-primary mt-4">Check</button>
+            <button type="button" id="remove" class="btn btn-danger mt-4 mx-2">Remove</button>
         </div>
-        <div class="fs-6 fw-bold text-danger text-center bg-white rounded-3 mt-4 p-4 d-none">
+        <div class="result-section-no fs-6 fw-bold text-danger text-center bg-white rounded-3 mt-4 p-4 d-none">
             Ci dispiace ma il suo indirizzo non possiede i privilegi necessari per poter accedere.
+        </div>
+        <div class="result-section-yes fs-6 fw-bold text-success text-center bg-white rounded-3 mt-4 p-4 d-none">
+            Il suo indirizzo possiede i privilegi richiesti per l'accesso. Bentornato!
         </div>
 
     </div>
